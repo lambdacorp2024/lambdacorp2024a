@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Hoja de trabajo 2</title>
+        <link rel=stylesheet href="..css/estilos.css" type="text/css"/>
+        <style type="text/css"></style>
+        <style>
+
+            body{
+
+                font-size: 1em;
+
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+                color:rgb(0, 0, 0);
+
+                .contenedor{
+
+                    background-color: rgba(255, 255, 255, 0.938);
+
+                    height: 25vh;
+
+                    margin: 3%;
+
+                    display: flex;
+
+                    flex-direction: column;
+
+                    justify-content: right;
+
+                    align-items: right;
+
+                    text-align: center;
+
+                    line-height:0.3em;
+
+                }
+
+            }
+            
+        </style>
+        
+    </head>
+
+    <body>
+
+        <img src="../images/usac_logo.png"  width="150" height="150" align="left"/>
+
+        <img src="../images/efpem.png"  width="150" height="150" align="right"/>
+
+        <div class="contenedor">  
+
+        <p>Universidad de San Carlos de Guatemala - USAC</p>
+
+        <p>Escuela de Formación de Profesores de Enseñanza Media - EFPEM</p>
+
+        <p>Programación Científica Comercial - 2024</p>
+
+        </div>
+
+        <hr>
+
+        <center>
+
+        <h1>HOJA DE TRABAJO No. 2</h1>
+        </center>
+
+         <section id="contenido2">
+            <div id="titulo">
+                 <h2>--Formulario para registrarse--</h2>
+            </div>
+            
+      <form action="enviar.php method="post">
+      
+          <fieldset>
+            <legend>Registrarse</legend>
+        
+            Nombre (s):<input type="text" name="nombre"  span class="rojo" size="28" required autofocus autocomplete placeholder="Su nombre"/><br><br>
+            Apellido (s):<input type="text" name="apellido"  span class="rojo" size="28" required autofocus autocomplete placeholder="Su apellido"/><br><br>
+            Teléfono:<input type="text" name="telefono"  span class="rojo" size="28" required autofocus autocomplete placeholder="Su teléfono"/><br><br>
+            Fecha Nacimiento:<input type="text" name="nacimiento"  span class="rojo" size="28" required autofocus autocomplete placeholder="Fecha de nacimiento"/><br><br>
+          
+          </fieldset>
+        
+          <fieldset>
+             <legend>Genero</legend>
+             <input type="radio" name="genero" value="Masculino"checked/>
+             Masculino
+        
+             <input type="radio" name="genero" value="Femenino"/>
+             Femenino
+             <br><br>
+             <legend>Intereses</legend>
+             <input type="checkbox" name="educacion" value="educacion"/>
+             Educación
+             <input type="checkbox" name="deportes" value="deportes"/>
+             Deportes
+             <input type="checkbox" name="arte" value="arte"/>
+             Arte
+             <input type="checkbox" name="ocio" value="ocio"/>
+             Ocio          
+            
+             <br><br>
+
+             <legend>Nivel Académico</legend>
+             <select id="nivel" name="nivel">
+                <option value="medio">Nivel medio</option>
+                <option value="tecnico">Nivel técnico</option>
+                <option value="licenciatura">Licenciatura</option>
+                <option value="maestria">Maestria</option>
+                <option value="doctorado">Doctorado</option>
+              </select><br><br>
+
+            Correo electrónico:<input type="email" name="mail" size="28" required autocomplete placeholder="nombre@servidor.com"/><br><br>
+
+          </fieldset>
+            
+             <input id="boton_enviar" type="submit" value="Enviar">
+        
+        </form>
+        <br><br>
+      
+         </section>
+      
+         <div id="franja_final"></div>
+         <footer>
+                  &copy;2024. Lambda Corp. Educación<br>
+                  Edificio Corporativo 6to. Nivel zona 9.<br>
+                 Guatemala, Guatemala. C.A.<br>
+         </footer>
+       </body>
